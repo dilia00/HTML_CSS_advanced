@@ -1,0 +1,113 @@
+@media(max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 180px);
+        padding-right: calc(50% - 180px);
+    }
+
+    .header {
+        &__burger {
+            margin-right: 0;
+        }
+
+        &__account,
+        &__cart {
+            display: none;
+        }
+    }
+
+    .promo {
+        min-height: 363px;
+
+        &__img {
+            display: none;
+        }
+
+        &__title {
+            font-size: 38px;
+            width: 100%;
+            margin-left: 10%;
+
+            &_span {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .offer {
+        padding-bottom: 64px;
+        gap: 32px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 248px) 111px;
+
+        &__item {
+            padding-top: 98px;
+            padding-bottom: 98px;
+
+            &_4 {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    .products {
+        &__text {
+            margin-bottom: 64px;
+            text-align: center;
+        }
+
+        &__items {
+            gap: 16px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            margin-bottom: 40px;
+        }
+
+        &__button {
+            margin-bottom: 85px;
+        }
+    }
+
+    .feature {
+        padding-top: 48px;
+        padding-bottom: 81px;
+        gap: 46px;
+
+        &__title {
+            margin-bottom: 14px;
+        }
+    }
+
+    .subscribe {
+        padding-bottom: 110px;
+
+        &__info {
+            margin-bottom: 59px;
+        }
+
+        &__txt {
+            font-size: 18px;
+            min-height: 73px;
+        }
+
+        &__box__title {
+            line-height: 153.2%
+        }
+
+        &__box__subtite {
+            font-size: 14px;
+            line-height: 153.2%;
+            margin-bottom: 22px;
+        }
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        padding-top: 43px;
+        padding-bottom: 9px;
+
+        &__social {
+            margin-bottom: 40px;
+        }
+    }
+}

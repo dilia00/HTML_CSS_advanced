@@ -19,8 +19,9 @@
 
 }
 
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-// %font_style {
-//     font-family: sans-serif;
-//     font-style: normal;
-// }
+}
