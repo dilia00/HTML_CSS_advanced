@@ -67,6 +67,20 @@ body {
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
+.burger__drop_close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+.burger__drop_close path {
+  transition: fill 0.3s;
+}
+.burger__drop_close:hover path {
+  fill: #F16D7F;
+}
+.burger__drop_close:active {
+  opacity: 0.5;
+}
 .burger__drop-title {
   font-weight: 700;
   font-size: 14px;
@@ -159,17 +173,29 @@ body {
 .offer__item_1 {
   background: url(../img/offer_bg.svg), url(../img/offer_1.jpg) no-repeat;
 }
+.offer__item_1:hover {
+  background: url(../img/offer_1.jpg) no-repeat;
+}
 .offer__item_2 {
   background: url(../img/offer_bg.svg), url(../img/offer_2.jpg) no-repeat;
 }
+.offer__item_2:hover {
+  background: url(../img/offer_2.jpg) no-repeat;
+}
 .offer__item_3 {
   background: url(../img/offer_bg.svg), url(../img/offer_3.jpg) no-repeat;
+}
+.offer__item_3:hover {
+  background: url(../img/offer_3.jpg) no-repeat;
 }
 .offer__item_4 {
   grid-column: 1/-1;
   padding-top: 65px;
   padding-bottom: 65px;
   background: url(../img/offer_bg_big.svg), url(../img/offer_4.jpg) no-repeat;
+}
+.offer__item_4:hover {
+  background: url(../img/offer_4.jpg) no-repeat;
 }
 .offer__span {
   color: #F16D7F;
@@ -595,6 +621,7 @@ body {
   border-color: #F16D7F;
   min-width: 212px;
   transition: all 0.3s;
+  margin-top: 48px;
 }
 .description__btn:hover {
   color: #fff;
@@ -612,19 +639,20 @@ body {
   display: flex;
   gap: 22px;
   justify-content: center;
-  margin-bottom: 48px;
   color: #5D5D5D;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
+.sorting__details {
+  position: relative;
+}
 .sorting__details::-webkit-details-marker {
   display: none;
 }
 .sorting__summary {
   display: block;
-  position: relative;
   transition: color 0.3s;
 }
 .sorting__summary path {
@@ -642,6 +670,7 @@ body {
 }
 .sorting__summary-size {
   position: absolute;
+  left: -15px;
   z-index: 10;
   min-width: 79px;
   padding: 9px;
@@ -662,6 +691,115 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   margin-bottom: 128px;
+}
+
+.filter-content {
+  padding-top: 51px;
+  padding-bottom: 64px;
+  display: flex;
+  gap: 30px;
+}
+
+.filter {
+  position: relative;
+  min-width: 360px;
+}
+.filter-box__details[open] {
+  color: #F16D7F;
+  position: absolute;
+  z-index: 10;
+  padding: 13px 16px 16px;
+  min-width: 360px;
+  background: #FFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.filter-box__details[open] path {
+  fill: #F16D7F;
+}
+.filter-box__summary {
+  list-style: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.filter-box__summary_svg {
+  margin-left: 11px;
+}
+.filter__details:not([open]) {
+  color: #5D5D5D;
+}
+.filter__details__item {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 11px;
+  padding-top: 24px;
+  padding-left: 12px;
+}
+.filter__details__item__link {
+  color: #5D5D5D;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.filter__summary {
+  margin-top: 16px;
+  list-style: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-left: 5px solid #F16D7F;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 11px 11px;
+}
+.filter__sorting {
+  gap: 28px;
+}
+
+.pagination {
+  color: #C4C4C4;
+  padding: 15px 8px;
+  margin-bottom: 96px;
+  display: flex;
+  border: 0.5px solid #EBEBEB;
+  border-radius: 4px;
+}
+.pagination__btn {
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #C4C4C4;
+  padding-right: 8px;
+  padding-left: 8px;
+  transition: all 0.3s;
+}
+.pagination__btn_active {
+  color: #F16D7F;
+}
+.pagination__btn:nth-child(7) {
+  padding-right: 0;
+}
+.pagination__btn:nth-child(9) {
+  padding-left: 0;
+}
+.pagination__btn path {
+  transition: all 0.3s;
+}
+.pagination__btn:hover {
+  color: #F16D7F;
+}
+.pagination__btn:hover path {
+  fill: #F16D7F;
+}
+.pagination__btn:active {
+  opacity: 0.5;
 }
 
 @media (max-width: 1024px) {

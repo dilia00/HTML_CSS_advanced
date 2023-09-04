@@ -1,24 +1,7 @@
 @import 'var';
 @import 'mexin';
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-}
-
-.center {
-    padding-left: calc(50% - $widthContent/2);
-    padding-right: calc(50% - $widthContent/2);
-}
+@import 'base';
 
 @import 'header';
 
@@ -26,10 +9,12 @@ body {
 
 @import 'footer';
 
-@import "product";
+@import 'product';
+
+@import 'catalog';
 
 
 
 @import '1024px';
 
-@import '767px'
+@import '767px';

@@ -28,13 +28,6 @@
     }
 }
 
-
-
-
-
-
-
-
 .offer {
     padding-top: 64px;
     padding-bottom: 96px;
@@ -53,14 +46,26 @@
 
         &_1 {
             background: url(../img/offer_bg.svg), url(../img/offer_1.jpg) no-repeat;
+
+            &:hover {
+                background: url(../img/offer_1.jpg) no-repeat;
+            }
         }
 
         &_2 {
             background: url(../img/offer_bg.svg), url(../img/offer_2.jpg) no-repeat;
+
+            &:hover {
+                background: url(../img/offer_2.jpg) no-repeat;
+            }
         }
 
         &_3 {
             background: url(../img/offer_bg.svg), url(../img/offer_3.jpg) no-repeat;
+
+            &:hover {
+                background: url(../img/offer_3.jpg) no-repeat;
+            }
         }
 
         &_4 {
@@ -68,6 +73,10 @@
             padding-top: 65px;
             padding-bottom: 65px;
             background: url(../img/offer_bg_big.svg), url(../img/offer_4.jpg) no-repeat;
+
+            &:hover {
+                background: url(../img/offer_4.jpg) no-repeat;
+            }
         }
     }
 

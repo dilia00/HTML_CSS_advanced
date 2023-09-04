@@ -60,6 +60,24 @@
         background: #FFFFFF;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 
+        &_close {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+
+            path {
+                transition: fill 0.3s;
+            }
+
+            &:hover path {
+                fill: $colorSelect
+            }
+
+            &:active {
+                opacity: 0.5;
+            }
+        }
+
         &-title {
             font-weight: 700;
             font-size: 14px;
