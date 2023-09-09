@@ -49,6 +49,10 @@
             &__link {
                 color: $colorText;
                 @include fontSite(14px, 400);
+
+                &:hover {
+                    color: $colorSelect;
+                }
             }
         }
     }
