@@ -17,7 +17,7 @@
             color: #222;
         }
 
-        &__imput {
+        &__input {
             margin-top: 20px;
         }
 
@@ -47,6 +47,10 @@
 
             &:hover:before {
                 border: 1px solid $colorSelect;
+            }
+
+            &:last-child {
+                display: none;
             }
         }
 
@@ -113,13 +117,10 @@
         }
 
         &__li {
-            list-style-type: none;
+            list-style-image: url(../img/mark.svg);
             margin-bottom: 16px;
-
-            &::before {
-                content: url(../img/mark.svg);
-                margin-right: 23px;
-            }
+            margin-left: 26px;
+            padding-left: 16px;
         }
     }
 }
