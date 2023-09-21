@@ -42,7 +42,7 @@
 
     &__img_hidden {
         display: none;
-        height: 650px;
+        width: 650px;
     }
 
     &__pagination {
@@ -98,9 +98,8 @@
     &__text {
         color: $colorText;
         @include fontSite(14px, 300);
-        padding-left: calc(50% - 277px);
-        padding-right: calc(50% - 277px);
-        margin-bottom: 32px;
+        max-width: 555px;
+        margin: 0 auto 32px;
     }
 
     &__price {

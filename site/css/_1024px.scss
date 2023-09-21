@@ -104,6 +104,16 @@
         margin-bottom: 64px;
     }
 
+    .filter {
+        &-content {
+            justify-items: stretch;
+        }
+
+        &__sorting {
+            justify-content: flex-end;
+        }
+    }
+
     .cart {
         padding-top: 60px;
         align-items: center;
@@ -149,6 +159,10 @@
         &-desc {
             max-width: 354px;
             font-size: 16px;
+
+            &__title {
+                font-size: 16px;
+            }
 
             &__text {
                 padding-top: 32px;

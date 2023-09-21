@@ -1,4 +1,4 @@
-.breadcrumb__nav_cart {
+.breadcrumb__nav_none {
     display: none;
 }
 
@@ -21,7 +21,7 @@
 
         &__img {
             width: 262px;
-            height: 100%;
+            object-fit: cover;
         }
 
         &__desc {
@@ -39,6 +39,7 @@
 
         &__txt {
             margin-bottom: 6px;
+            @include fontSite(22px, 400);
 
             &_price {
                 color: $colorSelect;
@@ -90,6 +91,7 @@
         &__btn {
             @include button(1px solid #A4A4A4);
             @include fontSite(14px, 300);
+            text-transform: uppercase;
             padding: 16px 40px;
 
             &:hover {
@@ -122,6 +124,7 @@
             width: 104px;
             color: #4A4A4A;
             @include fontSite(11px, 300);
+            text-transform: uppercase;
             @include button(1px solid #4A4A4A);
 
             &:hover {
@@ -187,7 +190,6 @@
         }
     }
 }
-
 
 .form__input {
     padding: 15px 17px;

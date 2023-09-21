@@ -1,0 +1,74 @@
+$widthBulb: 50px;
+$iterationAnimation: 6;
+
+@for $i from 1 through $iterationAnimation {
+    @keyframes bulb_#{$i} {
+
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+            left: random(90)+vw;
+            top: random(90)+vh;
+        }
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.counter-info {
+    text-align: right;
+    font-size: 40px;
+    padding: 20px 40px;
+
+    &::before {
+        content: counter(count);
+        color: antiquewhite;
+    }
+}
+
+.game-box {
+    counter-reset: count;
+    background-image: url(img/zemlia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+    &__label {
+        position: absolute;
+
+        @for $i from 1 through $iterationAnimation {
+            &_#{$i} {
+                animation: bulb_#{$i} 3s cubic-bezier(0, 1.06, 0.68, 0.53) #{$i}s infinite both;
+            }
+        }
+    }
+
+    &__fa {
+        color: gold;
+        font-size: 50px;
+    }
+
+    &__input {
+        visibility: hidden;
+    }
+
+    &__input:checked {
+        counter-increment: count;
+    }
+
+    &__input:checked+&__label {
+        display: none;
+    }
+}

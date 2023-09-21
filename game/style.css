@@ -1,0 +1,136 @@
+@keyframes bulb_1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 31vw;
+    top: 64vh;
+  }
+}
+@keyframes bulb_2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 38vw;
+    top: 7vh;
+  }
+}
+@keyframes bulb_3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 54vw;
+    top: 82vh;
+  }
+}
+@keyframes bulb_4 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 78vw;
+    top: 90vh;
+  }
+}
+@keyframes bulb_5 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 76vw;
+    top: 10vh;
+  }
+}
+@keyframes bulb_6 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 49vw;
+    top: 44vh;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.counter-info {
+  text-align: right;
+  font-size: 40px;
+  padding: 20px 40px;
+}
+.counter-info::before {
+  content: counter(count);
+  color: antiquewhite;
+}
+
+.game-box {
+  counter-reset: count;
+  background-image: url(img/zemlia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.game-box__label {
+  position: absolute;
+}
+.game-box__label_1 {
+  animation: bulb_1 3s cubic-bezier(0, 1.06, 0.68, 0.53) 1s infinite both;
+}
+.game-box__label_2 {
+  animation: bulb_2 3s cubic-bezier(0, 1.06, 0.68, 0.53) 2s infinite both;
+}
+.game-box__label_3 {
+  animation: bulb_3 3s cubic-bezier(0, 1.06, 0.68, 0.53) 3s infinite both;
+}
+.game-box__label_4 {
+  animation: bulb_4 3s cubic-bezier(0, 1.06, 0.68, 0.53) 4s infinite both;
+}
+.game-box__label_5 {
+  animation: bulb_5 3s cubic-bezier(0, 1.06, 0.68, 0.53) 5s infinite both;
+}
+.game-box__label_6 {
+  animation: bulb_6 3s cubic-bezier(0, 1.06, 0.68, 0.53) 6s infinite both;
+}
+.game-box__fa {
+  color: gold;
+  font-size: 50px;
+}
+.game-box__input {
+  visibility: hidden;
+}
+.game-box__input:checked {
+  counter-increment: count;
+}
+.game-box__input:checked + .game-box__label {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
